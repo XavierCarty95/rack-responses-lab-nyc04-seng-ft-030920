@@ -2,7 +2,7 @@ class Application
   
   def env 
     
-    response = 
+    response = Rack::response.new 
     
   end 
   
