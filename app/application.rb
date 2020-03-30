@@ -2,7 +2,7 @@ class Application
   
   def env 
     
-    response = Rack::Response.new 
+    res = Rack::Response.new 
     time = Time.now()
     if time.hour > 12 && time.hour < 24
       res.write "Good Afternoon"
