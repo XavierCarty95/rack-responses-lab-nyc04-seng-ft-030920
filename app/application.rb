@@ -5,10 +5,10 @@ class Application
     res = Rack::Response.new 
     time = Time.new
     res.write "#{time.hour}\n"
-    if time.hour <= 12 
-      res.write "Good Morning"
-    else 
+    if time.hour >= 12 
       res.write "Good Afternoon"
+    else 
+      res.write "Good Morning"
     end 
     res.finish
   end 
