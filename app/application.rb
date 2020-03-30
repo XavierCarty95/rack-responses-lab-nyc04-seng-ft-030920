@@ -8,6 +8,8 @@ class Application
       res.write "Good Afternoon"
     else 
       res.write "Good Morning"
+    end 
+    res.finish
   end 
   
   
